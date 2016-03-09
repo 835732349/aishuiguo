@@ -1,0 +1,40 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_page"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:background="@color/myColor" >
+    </android.support.v4.view.ViewPager>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:background="@color/myColor" >
+
+        <TextView
+            android:id="@+id/tv_fruitDesc_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="水果简介："
+            android:textColor="@color/green"
+            android:textSize="26sp" />
+
+        <TextView
+            android:id="@+id/tv_fruitDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_fruitDesc_title"
+            android:layout_margin="10dp"
+            android:textSize="18sp"
+            android:text="		苹果属于蔷薇科，落叶乔木，叶椭圆形，有锯齿；果实球形，味甜，是普通的水果，也是最常见的水果，富含丰富的营养，是世界四大水果（苹果、葡萄、柑桔和香蕉）之冠。苹果通常为红色，不过也有黄色和绿色。苹果是双子叶植物，花淡红或淡紫红色，大 多自花不育，需异花授粉，果实由子房和花托发育而成。果肉清脆香甜，能帮助消化。注意：苹果核有毒，请在食用时吐出，请勿吞食，即使榨汁也最好去除。" />
+    </RelativeLayout>
+
+</LinearLayout>
